@@ -1,0 +1,308 @@
+<!--doctype declaration HTML5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick's web dev page</title>
+
+
+</head>
+<body>
+
+<!-- <a></a> is an anchor tag -->
+    <a id="t1"></a>
+    <h1>Welcome</h1>
+    <hr color="red" size="6px"/>
+
+<!-- strong=bold, u=underline, em=italics -->
+<!-- &nbsp non breaking space -->
+    <p>Lorem ipsum dolor, sit amet <strong><u><em>consectetur</em></u></strong> adipisicing &nbsp;&nbsp;&nbsp;&nbsp; elit. 
+        Dolore corrupti hic earum excepturi delectus praesentium,
+         culpa ratione ipsa reprehenderit quas sint, ut ex consequatur
+          error architecto repellendus facere officia porro!</p>
+
+
+          <!-- break to next line -->
+          abc<br>
+          123<br>
+          nicholas<br>          
+
+<!-- pre formatted tag (runs as appears in code)-->
+<pre>
+    test 1
+test 2
+    test 3
+        test4
+</pre>
+
+<!-- less than/greater than symbol -->
+&lt;&gt;I want less than and greater than symbols in text
+<!-- copyright, registered, trademark -->
+&copy; &reg; &trade; &frac34; &frac25;
+<!-- superscript/subscript -->
+x<sup>3</sup> H<sub>2</sub>O
+<!-- ellipses -->
+&hellip;
+
+<!-- 
+Absolute Path (c:/documents/img/example.jpg) - Do not use
+Relative path (img/example.jpg) - taken from img folder where html is stored
+ -->
+ <!-- For URLs use absolute path -->
+
+<!-- <img src="img/example.jpg" height="200px" alt="flower" title="rose"> -->
+<!-- Make image source url as a comment -->
+
+<!-- Hyperlinks (anchor tag) (target="_new" = open in new tab)
+External -->
+<a href="http://www.SAIT.ca" target="_new">SAIT</a>
+<!-- Internal (brings you to new spot on same sight, eg. top of page, specific paragraph)
+needs a tag at destination (<a id="t1"/a>)-->
+<a href="#t1">Top</a>
+<a href="#b1">Bottom</a>
+<!-- email hyperlink -->
+<a href="mailto:nicholas.graham@edu.sait.ca">email</a>
+<!-- image as hyperlink -->
+
+<!-- Task 1 (Internal hyperklink)(Check demo in d2l) -->
+1. Java
+2. PHP
+3. C++
+4. C#
+*************************
+
+
+                <!-- TABLES -->
+<!-- <tr> = rows -->
+<!-- <td> = columns -->
+    
+<!-- <th>heading</th> -->
+<!-- <tb>body</tb> -->
+<!-- <tfoot>footer</tfoot> -->
+
+<!-- table border  <table border="1"-->
+<!-- merge table cells <td rowspan="2" colspan="2"-->
+        <!-- be careful of formatting! -->
+<!-- make space within cell larger <table cellpadding="10px" -->
+<!-- make space between cells larger <table cellspaceing="10px" -->
+
+
+<table border="1" cellpadding="10px" cellspacing="10px"><tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone</th>
+</tr>
+<tr>
+    <td>Nick</td>
+    <td rowspan="2">Sait</td>
+    <td>587-433-8175</td>
+</tr>
+<tr>
+    <td>Allen</td>
+    <!-- <td>Home</td> -->
+    <td>123-456-7890</td>
+</tr>
+<tr>
+    <td>Steve</td>
+    <td>1st Street</td>
+    <td>987-654-3210</td>
+</tr></table>
+
+                <!-- LISTS -->
+<!-- ordered <ol>-->
+    <!-- 123(default), abc, ABC, i ii iii, I II III -->
+<!-- unordered -->
+    <!-- disc(default), circle, square -->
+<!-- (shortcut) <ol>li*3 ENTER-->
+
+<!-- ORDERED LISTS -->
+<ol>
+    <li>PHP</li>
+    <li>C#</li>
+    <li>Java</li>
+</ol>
+<!-- start not on 1 -->
+<ol start="7">
+    <li>PHP</li>
+    <li>C#</li>
+    <li>Java</li>
+</ol>
+<!-- change type -->
+<ol type="I">
+    <li>PHP</li>
+    <li>C#</li>
+    <li>Java</li>
+</ol>
+<!-- type and start -->
+<ol type="I" start="7">
+    <li>PHP</li>
+    <li>C#</li>
+    <li>Java</li>
+</ol>
+
+<!-- UNORDERED -->
+<ul>
+    <li>PHP</li>
+    <li>C#</li>
+    <li>Java</li>
+</ul>
+
+<ul type="square">
+    <li>PHP</li>
+    <li>C#</li>
+    <li>Java</li>
+</ul>
+
+<!-- NESTED LIST -->
+    <!-- careful of end tags -->
+<ol type="I">
+    <li>Programming</li>
+    <ul type="circle">
+        <li>PHP</li>
+        <li>C#</li>
+        <li>Java</li>
+    </ul>
+    <li>Fruits</li>
+    <ul type="circle">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul>   
+</ol>
+
+<!-- HOMEWORK(make a list with this formatting) -->
+
+    <!-- -programming language -->
+        <!-- 1. Objected oriented -->
+            <!-- a. Python
+                b. C#
+                c.Java -->
+        <!-- 2. Procedural Language -->
+                <!-- -C -->
+    <!-- -Fruits -->    
+        <!-- A. Apple
+            B. Banana -->
+<ul>
+    <li>Programming Language</li>
+    <ol>
+        <li>Object oriented</li>
+            <ol type="a">
+                <li>Python</li>
+                <li>C#</li>
+                <li>Java</li>
+            </ol>
+        <li>Procedural Language</li>
+            <ul>
+                <li>C</li>
+            </ul>
+        </ol>
+    <li>Fruits</li>
+        <ol type="A">
+            <li>Apple</li>
+            <li>Banana</li>
+        </ol>
+</ul>
+<!-- end of homework -->
+
+<!-- FORM TAG (user text boxes) -->
+
+    <form>
+        <label for="t1">Name:<br></label>
+        <input type="text" id="t1" pattern=[A-Za-z/s] placeholder="Enter Name">
+    </form>
+<pre>  
+    <!-- All in one form -->    
+        <!-- METHOD - get and post -->
+            <!-- eg. <form action="second.html" method="get"> -->
+                <!-- get gives querystring, post gives no querystring -->
+    <form action="second.html" method="post">
+        <label for="t1">
+        Name:
+        <input type="text" id="t1" pattern="[A-Za-z/s]" name="n1" placeholder="Enter Name">
+        
+        Password
+        <input type="password" id="t2" maxlength="20"pattern="[A-Za-z]{5,}" name="p1" placeholder="Min. 5, max. 20 characters">
+       
+        Address 
+        <textarea cols="10" row="5" id="t3"></textarea>
+
+        Country
+        <select size="2">
+            <option value="CA" selected>Canada</option>
+            <option value="USA">United States</option>
+            <option value="NZ">New Zealand</option>
+        </select>
+        <!-- checkbox can select any amount of options, uses the different name -->
+        Courses:
+        <input type="checkbox" name="c1">Java
+        <input type="checkbox" name="c2">C#
+        <input type="checkbox" name="c3">PHP
+        <!-- Radio can only select 1 option, radio uses same name -->
+        Session:
+        <input type="radio" name="r1" value="M" checked>Morning
+        <input type="radio" name="r1" value="A">Afternoon
+        <input type="radio" name="r1" value="E">Evening
+        
+        Gender:
+        <input type="radio" name="r2" value="M"checked>Male
+        <input type="radio" name="r2" value="F">Female        
+        
+        Phone:
+        <input type="text" pattern="\d{3}-\d{3}-\d{4}" placeholder="xxx-xxx-xxxx">
+        <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" (long way) -->
+       
+        ID:
+        <input type="hidden">
+        <input type="submit" value="OK"> <input type="reset">
+    </label>
+    </form>
+</pre>
+
+<!-- HOMEWORK
+https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+LEARN THIS! (not urgent) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="b1"></a>
+</body>
+</html>

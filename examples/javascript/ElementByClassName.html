@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		/* JS Code here */
+		function changeColor()
+		{
+			var redPara = document.getElementsByClassName("red")
+			for (var i = 0; i < redPara.length; i++)
+			{
+				redPara[i].style.color="red";
+			}
+
+			var greenPara = document.getElementsByClassName("green");
+			for (var i=0; i<greenPara.length; i++)
+			{
+				greenPara[i].style.color="green";
+			}
+		}
+		
+	</script>
+		 
+</head>
+<body onload="changeColor()">
+	<h1 class="red">Welcome</h1>
+	<p class="red">Hello</p>
+	<div class="red">
+		<h3>Para1</h4>
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque alias error iusto cupiditate aliquid dolorem reiciendis omnis porro ducimus quidem incidunt voluptas neque asperiores nisi rerum, dignissimos exercitationem recusandae iure.
+	</div>
+	<div class="green">
+		<h3>Para2</h4>
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque alias error iusto cupiditate aliquid dolorem reiciendis omnis porro ducimus quidem incidunt voluptas neque asperiores nisi rerum, dignissimos exercitationem recusandae iure.
+	</div>
+	<div class="red">
+		<h3>Para3</h4>
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque alias error iusto cupiditate aliquid dolorem reiciendis omnis porro ducimus quidem incidunt voluptas neque asperiores nisi rerum, dignissimos exercitationem recusandae iure.
+	</div>
+	<div class="green">
+	 	<h3>Para4</h4>
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque alias error iusto cupiditate aliquid dolorem reiciendis omnis porro ducimus quidem incidunt voluptas neque asperiores nisi rerum, dignissimos exercitationem recusandae iure.
+	</div>
+	
+</body>
+</html>

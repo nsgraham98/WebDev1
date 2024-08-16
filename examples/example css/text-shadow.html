@@ -1,0 +1,71 @@
+<!DoCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+                <title>Text Shadows</title>
+               
+                <style type="text/css">
+                    /* CSS Code here */
+                    h1
+                    {
+                        /* Shasow uses 4 values - 
+                        x-offset, y-offset, blur, color
+                        +ive x --> right
+                        -ive x --> left
+                        +ive y --> below
+                        -ive y --> above */
+                        text-shadow: -5px 5px 0 red; 
+                    }
+
+                    #one
+                    {
+                        text-shadow: 5px 5px 4px grey;
+                    }
+
+                    .multiple
+                    {
+                        text-shadow: 4px 2px 2px red, 6px 4px 2px green;
+                    }
+
+                    .two 
+                    {
+                        /* indented effect - base color and font color must be same  */
+                        text-shadow: .5px .5px 0 white, -.5px -.5px 0 black;
+                        background-color: slategrey;
+                        color: slategrey;
+                        text-transform: uppercase;
+                    }
+
+                    .neon
+                    {
+                        /* first shadow color (white) is same as font color, all following colors (lime) blur increases */
+                        background-color: black;
+                        color:white;
+                        text-shadow: 0 0 10px white, 0 0 10px lime,  0 0 20px lime,  0 0 30px lime;
+                    }
+
+                    div
+                    {
+                        /* x-offset y-offset blur-offset color inset */
+                        box-shadow: 0 0 20px 10px red, 0 0 20px 10px orange inset;
+                    }
+                </style>
+        </head>
+        <body>
+            <h1>HELLO</h1>
+            <h1 id="one">Black</h1>
+            <h1 class="multiple">Multiple shadows</h1>
+            <h1 class="two">White</h1>
+            <h1 class="neon">Neon</h1>
+            <div>
+                <p class="multiple">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p></div> 
+
+        </body>
+              
+    </html>

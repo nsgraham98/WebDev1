@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+
+
+/*CSS Here*/
+
+th, td
+{
+	border:1px solid;
+}
+table
+{
+	width:500px;
+	border-collapse:collapse;
+}
+.big::first-letter
+{
+	font-size:25px;
+	color:red;
+	font-weight: bold;
+}
+th 
+{
+	background-color: #000;
+	color:#fff;
+}
+tr:nth-of-type(even)
+{
+	background-color: cyan;
+}
+tr:nth-of-type(odd)
+{
+	background-color: yellow;
+}
+tr:nth-child(n+2)
+{
+	text-align:right;
+}
+tr:nth-last-child(-n+3)
+{
+	text-align:left;
+}
+tr:last-child, td:last-child
+{
+	font-weight: bold;
+}
+tr:nth-last-child(2)
+{
+	background-color: lightgreen;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<table >
+	<tr>
+		<th>Item</th>
+		<th>Price</th>
+		<th>Quantity</th>
+		<th>Total</th>
+	</tr>
+	<tr>
+		<td>Coffee mug</td>
+		<td>$10.00</td>
+		<td>5</td>
+		<td>$50.00</td>
+	</tr>
+	<tr>
+		<td>Polo shirt</td>
+		<td>$20.00</td>
+		<td>5</td>
+		<td>$100.00</td>
+	</tr>
+	<tr>
+		<td>Red stapler</td>
+		<td>$9.00</td>
+		<td>4</td>
+		<td>$36.00</td>
+	</tr>
+	<tr>
+		<td colspan="3">Subtotal</td>
+		<td>$186.00</td>
+	</tr>
+	<tr>
+		<td colspan="3">Shipping</td>
+		<td>$12.00</td>
+	</tr>
+	<tr>
+		<td colspan="3" class="big"> Total Due</td>
+		<td>$198.00</td>
+	</tr>
+</table>
+
+<p class="big">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iure quam itaque alias, ducimus! Dolorem, fugiat quas animi mollitia iusto minus est dolore doloremque possimus ipsa, accusantium adipisci quasi. Aliquam, quas!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p class="big">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iure quam itaque alias, ducimus! Dolorem, fugiat quas animi mollitia iusto minus est dolore doloremque possimus ipsa, accusantium adipisci quasi. Aliquam, quas!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</body>
+</html>

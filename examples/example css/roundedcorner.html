@@ -1,0 +1,101 @@
+<!DoCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+                <title>Rounded corners</title>
+                <style type="text/css">
+                    /* CSS Code here   */
+                    div
+                    {
+                        height: 150px;
+                        width: 150px;
+                        background: #999;
+                        float:left;
+                        margin:10px;
+                    }
+                    
+                    .all-corners
+                    /* Top left -> top right -> bottom right -> bottom left -> */
+                    {
+                        border-radius:20px;
+                    }
+
+                    .one-corners
+                    /* commented notation not recommended - use shorthand instead */
+                    {
+                        /* border-top-left-radius:75px;
+                        border-bottom-right-radius:40px; */
+                        border-radius: 75px 0px 40px 0px;
+                    
+                    }
+
+                    .elliptical-corners
+                    {
+                        border-radius:40px 20px 30px 10px;
+                    }
+
+                    .circle
+                    {
+                        border-radius:90px;
+                    }
+
+                    .box
+                    {
+                        height: 100px;
+                        width: 100px;
+                    }
+
+                    .red
+                    {
+                        background-color: red;
+                        
+                    }
+                    .orange
+                    {
+                        background-color: orange;
+                       
+                    }
+                    .green
+                    {
+                        background-color: green;
+                       
+                    }
+                    .purple
+                    {
+                        background-color: purple;
+                        
+                    }
+                    
+                </style>
+        </head>
+        <body>
+            
+            <div class="all-corners" ></div>
+            <div class="one-corners"></div>
+            <div class="elliptical-corners"></div>
+            <div class="circle"></div>
+             
+           
+                <br style="clear:both">
+            
+            <div class='box red' style='border-radius: 50px 75px 0px 75px;'></div>
+            <div class='box orange' style=' border-radius: 75px 50px 75px 0px;'></div>
+
+                <br style="clear:both">
+           
+            <div class='box green' style=' border-radius: 75px 0px 75px 50px;'></div>
+            <div class='box purple' style='border-radius: 0 75px 50px 75px;'></div>
+             
+                <br style="clear:both">        
+           
+            <div class='box red' style='border-radius: 100px 0 0 0 '></div>
+            <div class='box orange' style='border-radius:0 100px 0 0  '></div>
+
+                <br style="clear:both">  
+
+            <div class='box green' style='border-radius:0 0 0 100px'></div>
+            <div class='box purple' style='border-radius:0 0 100px 0'></div>
+
+        </body>
+              
+    </html>

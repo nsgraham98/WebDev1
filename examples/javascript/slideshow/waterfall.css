@@ -1,0 +1,27 @@
+/*waterfall.css*/
+
+body{
+    background-color: lightyellow;
+}
+
+#slideshow{
+    width: 50%;
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+#slideshow img
+{
+   width: 400px;
+   
+   height: auto;
+
+   margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+

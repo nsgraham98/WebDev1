@@ -1,0 +1,36 @@
+<html>
+<head>
+<style type="text/css">
+
+/*CSS Code Here */
+
+#box
+{
+    height:100px;
+    width:100px;
+    background-color: black;
+}
+#box:hover
+{
+    animation-name:john;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes john {
+    from
+    {
+        transform:translateY(10px)
+    }
+    to
+    {
+        transform:translateY(0)
+    }
+}
+</style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

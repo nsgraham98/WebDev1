@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Traffic_Light</title>
+
+	<style type="text/css">
+	#traffic{
+		background-color:#000;
+		height:350px;
+		width:150px;
+		margin:0px auto;
+	}
+
+	#red{
+		background-color:#F00;
+		width:80px;
+		height:80px;
+		border-radius:50px;
+		position:absolute;
+		margin-top:20px;
+		margin-left:35px;
+		visibility:hidden;
+	}
+
+	#yellow{
+		background-color:#FF0;
+		width:80px;
+		height:80px;
+		border-radius:50px;
+		position:absolute;
+		margin-top:130px;
+		margin-left:35px;
+		visibility:hidden;
+	}
+
+	#green{
+		background-color:#0F0;
+		width:80px;
+		height:80px;
+		border-radius:50px;
+		position:absolute;
+		margin-top:240px;
+		margin-left:35px;
+		visibility:hidden;
+	}
+
+	</style>
+
+	<script type="text/JavaScript">
+
+
+		/*JS code here*/
+
+		function green()
+		{
+			document.getElementById("green").style.visibility="visible";
+			document.getElementById("red").style.visibility="hidden";
+			//yellow(); // calling a function
+			setTimeout(yellow, 3000);
+		}
+
+		function yellow() // called function
+		{
+			document.getElementById("yellow").style.visibility="visible";
+			document.getElementById("green").style.visibility="hidden";
+			setTimeout(red, 3000);
+		}
+
+		function red()
+		{
+			document.getElementById("red").style.visibility="visible";
+			document.getElementById("yellow").style.visibility="hidden";
+			setTimeout(green, 3000);
+		}
+
+	</script>
+
+
+</head>
+<body onload="yellow()">
+
+<div id="traffic">
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+
+</div>
+
+</body>
+</html>

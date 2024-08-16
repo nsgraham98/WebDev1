@@ -1,0 +1,42 @@
+<!DoCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+                <title>Transform</title>
+                <style type="text/css">
+                    /* CSS Code Here */
+                    /* scale, rotate, skew, translate */
+                    h1
+                    {
+                        font-size:20px;
+                        border:1px solid red;
+                    }
+                    h1:hover
+                    {
+                        font-size:80px;
+                        transform: skewX(10deg);
+                        border:1px solid red;
+
+                    }
+                    img
+                    {
+                        transition: transform 2s;
+                    }
+                    img:hover
+                    {
+                        transform: rotate(45deg) scale(2);
+                    }
+                    h2:hover
+                    {
+                        transform:translateX(120px);
+                    }
+
+        </style>
+        </head>
+        <body>
+            <h1>Welcome</h1>
+            <img src='img/a1.jpg' height=200px width=200px>
+            <h2>Welcome</h2>
+        </body>
+              
+    </html>

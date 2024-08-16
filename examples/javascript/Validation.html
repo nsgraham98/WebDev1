@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+    	color:#06F;
+    	font-family:Tahoma;
+    	font-size:16px;	
+    }
+    #outer{
+    	width:80px;
+    	height:5px;
+    	background-color:lightgray;
+    	visibility:hidden;
+    	overflow:hidden;
+    }
+    #inner{
+    	height:100%;
+    	width:0px;
+    }
+
+    </style>
+    <script>
+
+
+    			/*JS code here*/
+        function fun()
+        {
+            var a = document.getElementById("demo").value;
+            var b = isNaN(a); // isNaN -> is Not a Number
+            if (!b) 
+            {
+                document.getElementById("nm").innerHTML = "Enter the user name first";
+                // .innerHTML -> between opening and closing tag
+                // <div id="nm" ></div> is this case
+            }
+            else
+            {
+                document.getElementById("nm").innerHTML = "<img src='1.jpg' height=15>";
+            }
+        }
+
+        function fun2()
+        {
+            document.getElementById("outer").style.visibility="visible";
+            var a = document.getElementById("ps").value;
+            var b = a.length  * 10; 
+            document.getElementById("inner").style.width = b + "px";
+
+            if(b<40)
+            {
+                document.getElementById("inner").style.backgroundColor = "red";
+            }
+            else if(b<80)
+            {
+                document.getElementById("inner").style.backgroundColor = "orange";
+            }
+            else
+            {
+                document.getElementById("inner").style.backgroundColor = "green";
+                document.getElementById("icon").innerHTML = "<img src='1.jpg' height=15>";
+            }
+        }
+
+        function mobile12()
+        {
+            var a = document.getElementById("mob").value;
+            var b = isNaN(a);
+
+            if(a=="") //or if(a<1)
+            {
+                document.getElementById("alnum").innerHTML = "Please enter Number";
+            }
+            else if(b)
+            {
+                document.getElementById("alnum").innerHTML = "Please enter a valid number";
+            }
+            else
+            {
+                document.getElementById("alnum").innerHTML = "Thank you";
+            }
+        }
+                
+    </script>
+
+
+</head>
+
+<body >
+			<form name="frm">
+            		<table>
+                    		<tr>
+                            	<td>Enter name </td>
+                                <td><input type="text" name="nm" id="demo" onblur="fun()"/></td>
+                                <td>
+                                	<div id="nm" ></div>
+                                </td>
+                             </tr>
+                             
+                    		<tr>
+                            	<td>Password </td>
+                                <td>
+                                    <input type="text" id="ps" name="ps" onfocus="fun2()" onkeyup="fun2()"/>
+                                </td>
+                                <td>
+                                    <div id="outer">
+                                        <div id="inner">
+                                            
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                	<div id="icon"></div>
+                                </td>
+                                
+                               </tr>
+                             
+                    		<tr>
+                            		<td>Mobile </td>
+                                    <td>
+                                    <input type="text" name="mobile" id="mob" onblur="mobile12()"/>
+                                    <div id="alnum"></div>
+                                    </td>
+                             </tr>
+                             
+                             <tr>
+                                    <td>
+                                    <input type="submit" name="sub" />
+                                    </td>
+                             </tr>
+                    
+                    </table>
+            </form>
+
+
+</body>
+</html>
+ 

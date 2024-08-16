@@ -1,0 +1,52 @@
+/* <style type="text/css"> FULL TAG NOT NEEDED IN .css */
+/* External style */
+/* selector */
+/* rule */
+/* hexadecimal notation
+    0-9    
+    10 A
+    11 B
+    12 C
+    13 D
+    14 E
+    15 F */
+
+body
+    {
+        background-color:rgb(123, 238, 213);
+        /* background-image:url("img/example.jpg"); */
+        /* background-repeat:no-repeat; */
+            /* no-repeat, repeat-x, repeat-y */
+        /* background-position:center; */
+            /* center, top left, px=300, px=500, etc */
+        /* background-attachment:fixed; */
+            /* fixed spot (while scrolling etc) */
+
+    }
+
+h1, h4
+    {
+    /* property:value --> declaration */
+        color:blue;
+        background-color:yellow;
+        font-family:fantasy;
+    }
+#c1
+    {
+        text-align:center;
+    }
+.c1
+    {
+        text-align:right;
+    }
+p
+    {
+        font-weight:bold;
+        font-style:italic;
+        background-color:#34E4FA;
+    }
+
+/* id = # in css */
+/* class = . */
+
+

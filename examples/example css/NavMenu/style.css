@@ -1,0 +1,56 @@
+body
+{
+    background-color: wheat;
+}
+
+/* attritbute selector */
+h1[id="pageTitle"]
+{
+    text-align: center;
+    /* background-color: green; */
+}
+
+#navSection
+{
+    position:absolute;
+    top:20px;
+    left:25px;
+    border-bottom: 5px solid black;
+
+}
+
+#menuContent
+{
+    max-height: 0;
+    overflow:hidden;
+}
+
+#menuContent ul
+{
+    list-style: none; 
+    margin: 0 5px;   
+    padding: 0;
+}
+
+#selection:checked ~ #menuContent
+{
+    max-height: 100%;
+}
+
+input
+{
+    display:none;
+}
+
+label
+{
+    background: url(res/icons/menu.png) no-repeat;
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#selection:checked + label
+{
+    background-image: url(res/icons/close.png)
+}

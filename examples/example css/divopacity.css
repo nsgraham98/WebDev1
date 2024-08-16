@@ -1,0 +1,18 @@
+/* CSS code here*/
+
+body
+{
+    background-image: url(img/a1.jpg);
+    background-size: cover;
+    
+}
+
+div
+{
+    border:2px solid red;
+    width:30%;
+    margin:0 auto;
+    padding:140px;
+    /* rgbA = rgb Alpha (0-1)*/
+    background:rgba(255, 238, 0, 0.323);
+}

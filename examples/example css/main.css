@@ -1,0 +1,39 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Alata|Fjalla+One|Heebo&display=swap');
+
+/* body
+{
+    background-image: url(img/a1.jpg);
+    background-size: cover;
+    opacity: 50%;
+    position:absolute;
+    content:"";
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:50%;
+} */
+
+body::after
+{
+    background-image: url(img/a1.jpg);
+    background-size: cover;
+    opacity: 50%;
+    position:absolute;
+    content:"";
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:50%;
+}
+
+p
+{
+    font-size: 100px;
+    width:80%;
+    margin: 0 auto;
+}

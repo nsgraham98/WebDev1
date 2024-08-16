@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Control</title>
+<script type="text/javascript" src="globalarrayandfunctions.js"></script>
+</head>
+<body>
+	<!-- onsubmit="storedata();return false" -> return false" so you stay on the same page (instead of going to something like second.html) -->
+	 <!-- onsubmit will check the form, onclick will not check the form -->
+<form  id="dataform" onsubmit="storedata();return false">
+<table>
+	<tr><td>Name</td><td><input type="text"  id="clientname" maxlength="25" size="20" required pattern=[a-zA-Z]{5}></td></tr>
+	<tr><td>Address</td><td><input type="text" id="address" maxlength="25" size="20" required></td></tr>
+	<tr><td>Phone</td><td><input type="tel" id="contactphone" maxlength="15" size="20" required></td></tr>
+	<tr><td>Email</td><td><input type="email" id="email" maxlength="20" size="20" required></td></tr>
+</table>
+<input type="submit" value="Submit Form"  >
+
+</form>
+
+<form id="futurevalue">
+<h1>Calculate Future Values</h1>
+<br/>
+
+<table>
+<tr><td>Principle</td><td><input type ="number" id="principle" size="20" min="0" readonly="true"></td></tr>
+<tr><td>Years</td><td><input type ="number" id="years" size="20" min="1" readonly="true"></td></tr>
+</table>
+
+<br/>
+<h2>Interest is paid monthly</h2>
+
+<!-- List interest rates -->
+
+<select id="interestrate" disabled="true">
+	<option selected="selected">Choose your interest rate</option>
+	<option value=".05">5% </option>
+	<option value=".0575">5.75% </option>
+	<option value=".0625">6.25% </option>
+</select>
+<br>
+
+<input type ="submit" value="Future Value" id="fvbutton" disabled="true" onClick="calcfv();return false;">
+
+</form>
+<h1><span id="result"></span></h1>
+</body>
+</html>

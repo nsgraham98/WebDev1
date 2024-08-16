@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<script>
+		/* JS Code here */
+		window.onload = init;
+
+		function init()
+		{
+			document.getElementById("btn1").onclick = changeHeadingColor;
+			document.getElementById("btn2").onclick = changeParaText;
+		}
+
+		function changeHeadingColor()
+		{
+			var elems = document.getElementByTagName("h2");
+			for (var i=0; i<elems.length; i++)
+			{
+				elems[i].style.color = "red";
+
+			}
+		}
+
+		function changeParaText()
+		{
+			var elems = getElementByTagName("para");
+			for (var i=0; i<elems.length; i++)
+			{
+				elems[i].innerHTML = " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, sint nulla. Totam ducimus, numquam laboriosam ipsum aperiam dignissimos, quis nesciunt mollitia, asperiores quasi delectus illo optio veritatis unde sit inventore.";
+			}
+		}
+		
+</script>
+</head>
+
+<body>
+
+	<h2>Heading 2</h2>
+	<h2>Heading 2</h2>
+	<p class="para">Paragraph 1</p>
+	<p class="para">Paragraph 2</p>
+	<p class="para">Paragraph 3</p>
+	<input type="button" id="btn1" value="Change Heading 2" />
+	<input type="button" id="btn2" value="Change Paragraph" />
+	 
+
+</body>
+</html>

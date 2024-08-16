@@ -1,0 +1,57 @@
+<!DoCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+                <title>transition</title>
+                <style type="text/css">
+                /* CSS Code here */
+                
+                h1
+                {
+                    font-size: 100px;
+                    transition: font-size 2s;
+                }
+                h1:hover
+                {
+                    font-size: 200px;
+                }
+                div
+                {
+                    background-color: black;
+                    transition: background-color 1s;
+                }
+                div:hover
+                {
+                    background-color: silver;
+                }
+                .demo
+                {
+                    height: 100px;
+                    width: 100px;
+                    background-color: green;
+                    transition-property: width, background-color, height;
+                    transition-duration:1s, 3s, 2s;
+                    transition-delay:0s, 1s, 3s;
+                    transition-timing-function: ease-in-out;
+                }
+                .demo:hover
+                {
+                    height:200px;
+                    width:200px;
+                    background-color:red;
+                }
+
+                </style>
+        </head>
+        <body>
+            <h1>Welcome</h1>
+            <div >Home</div>
+            <div >About</div>
+            <div >Services</div>
+            <div >Contact Us</div>
+            <div class="demo">P</div>
+          
+            
+        </body>
+              
+    </html>

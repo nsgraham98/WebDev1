@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+
+body {
+	background-color: rgb(226, 222, 196);
+
+	font-family: arial, tahoma  , sans-serif;
+
+
+}
+p
+{
+	font-family: 'john';
+	letter-spacing: 1px;
+	word-spacing: 10px;
+
+}
+
+@font-face
+{
+	font-family:'john';
+	src:url("C:\Users\nsgra\OneDrive - Southern Alberta Institute of Technology\CPRG 213 Web Dev 1\css\fonts\Sevillana\Sevillana-Regular.ttf") format("truetype");
+}
+
+
+.even
+{
+	color:blue;
+}
+
+.odd
+{
+	color:red;
+}
+
+.jacquard-12-regular {
+	font-family: "Jacquard 12", system-ui;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+
+#main
+{
+	color:white;
+}
+
+h1 
+{
+	font-family: 'sans-serif;';
+	font-size: 80px;
+	text-align: center; /*right, left(default)*/
+	font-weight: light; /*bolder, light, lighter, 200*/
+	background-color: teal;
+	font-style: italic;
+	font-variant: small-caps;
+	letter-spacing:4px;
+
+	
+}
+
+h2 {
+	font-size: 40px;
+	color: #2d3033;
+}
+
+	/* psuedo classes */
+/* LoVe HAte acronoym(for hyperlinks)
+	Link
+	Visited
+	Hover
+	Active */
+a:link
+{
+	color:green;
+	text-decoration: none;
+}
+a:visited
+{
+	color:orange;
+}
+a:hover
+{
+	text-decoration:underline;
+	background-color:pink;
+	color:white;
+	font-size: 40px;
+}
+a:active
+{
+	color:darkorange;
+	background-color: grey;
+}
+
+
+@media  print
+{
+	body {
+
+		font-family: sans-serif;
+		background-color: transparent;
+	}
+	h1 {
+		/*font-family: 'Girassol', cursive;*/
+		font-size: 20px;
+		text-align: left;
+		font-weight: normal; /*bolder, light, lighter, 200*/
+		font-variant: small-caps;
+		color: red;  /*rgb  #ffffff*/ 
+		background-color: transparent;
+		font-style: normal;
+		letter-spacing: 10px;
+		font-family: sans-serif;
+	}
+	p
+	{
+		color: red;
+		font-family: sans-serif;
+	}
+
+}
+
+

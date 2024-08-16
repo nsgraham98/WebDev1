@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric to Imperial Conversion</title>
+    <script type="text/javascript" src="onchanges.js"></script>
+</head>
+<body>
+    <h2>Imperial to metric conversion</h2>
+    <br>
+    <table>
+        <th>Imperial Value in Feet</th><th>Metric value in Centimeters</th>
+        <tr>
+            <td>
+                <input type="number" min="0" id="imperial" onkeyup="convertImperialValue(this.value);">
+            </td>
+            <td>
+                <input type="number" min="0" id="metric" onchange="convertMetricValue(this.value);">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
