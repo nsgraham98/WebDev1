@@ -1,0 +1,81 @@
+header img
+{
+    height: 100px;
+    margin: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    float: left;
+}
+h1
+{
+    font-size: 60px;
+    text-align: center;
+}
+h1 , h2
+{
+    color:#04AA6D;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 50px 20px;
+    padding: 0;
+}
+li a
+{
+    color:#04AA6D;
+    padding:5px;
+    border: solid 2px #04AA6D;
+    font-size: 20px;
+    display: block;
+    text-decoration:none;
+    width: 5em;
+}
+li a:hover
+{
+    background-color: #2ae9a3;
+}
+footer
+{
+    background-color: #2ae9a3;
+    position: fixed;
+    width:100vw;
+    left:0;
+    bottom:0;
+    text-align: center;
+}
+div.formgrid
+{
+    margin:0 30vw 200px 30vw;
+}
+form
+{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+}
+input[type=text]
+{
+    width:30vw;
+    padding:10px;
+    resize:vertical;
+}
+input[type=submit]
+{
+    padding:10px;
+    width:100px;
+}
+label
+{
+    padding:10px;
+    display: inline-block;
+    text-align: right;
+}
+textarea
+{
+    height:200px;
+    resize: none;
+    width:30vw;
+    padding:10px;
+}

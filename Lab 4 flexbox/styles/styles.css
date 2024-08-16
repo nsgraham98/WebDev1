@@ -1,0 +1,82 @@
+.flex1
+{
+    display: flex;
+    background-color: dodgerblue;
+}
+.flex1 div
+{
+    background-color: #f1f1f1;
+    height:50px;
+    margin:10px;
+    flex-grow: 1;
+}
+.flex1 div:nth-child(2)
+{
+    margin-left: 0;
+}
+
+.flex2
+{
+    display: flex;
+    background-color: dodgerblue;
+}
+.flex2 div
+{
+    background-color: #f1f1f1;
+    height:50px;
+    margin:15px;
+    flex-grow: 1;
+}
+.flex2 div:nth-child(2)
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.flex3
+{
+    display: flex;
+    background-color: dodgerblue;
+}
+
+.flex3 div
+{
+    background-color: #f1f1f1;
+    height:50px;
+    margin:12px;
+    flex-grow: 1;
+    border: 2px solid black;
+}
+.flex3 div:nth-child(1)
+{
+    margin-right: 0;
+    flex-grow:2;
+}
+.flex3 div:nth-child(2)
+{
+    margin-right: 0;
+}
+
+.flex4
+{
+    display: flex;
+    background-color: dodgerblue;
+    flex-wrap: wrap;
+}
+.flex4 div
+{
+    background-color: #f1f1f1;
+    height:50px;
+    margin:12px 0px 12px 12px;
+    flex-grow: 1;
+    border: 2px solid black;
+}
+.flex4 div:nth-child(4)
+{
+    margin-right: 12px;
+}
+.flex4 div:nth-child(5)
+{
+    width:100%;
+    margin:0 12px 12px 12px;
+}
